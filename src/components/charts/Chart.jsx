@@ -18,7 +18,7 @@ const Chart = (props) => {
     return <ResponsiveContainer width="100%" height={300}>
         <PieChart>
         <Pie data={data} nameKey="senderId" valueKey="amount" cx="50%" cy="50%" innerRadius={20}
-             outerRadius={80} fill="#82ca9d" label>{
+             outerRadius={80} fill="#82ca9d">{
             data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
         }</Pie>
         <Legend verticalAlign="top" align="left" height={36} layout={"vertical"}/>

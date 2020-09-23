@@ -21,6 +21,7 @@ import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
+import {useTranslation} from "react-i18next";
 
 
 const tableIcons = {
@@ -46,7 +47,8 @@ const tableIcons = {
 
 
 const Table = (props) => {
-    let [filter, setFilter] = useState(1);
+    const { t, i18n } = useTranslation();
+    let [filter, setFilter] = useState(30);
     const date = moment().subtract(filter, 'days').format('YYYY/MM/DD')
     let data = props.data.filter(
         (item)=>item.date > date
@@ -62,21 +64,21 @@ const Table = (props) => {
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
             >
-                <MenuItem value={1}>1 day</MenuItem>
-                <MenuItem value={7}>1 week</MenuItem>
-                <MenuItem value={30}>1 month</MenuItem>
-                <MenuItem value={183}>6 month</MenuItem>
-                <MenuItem value={365}>1 year</MenuItem>
+                <MenuItem value={1}>{t('1 day')}</MenuItem>
+                <MenuItem value={7}>{t('1 week')}</MenuItem>
+                <MenuItem value={30}>{t('1 month')}</MenuItem>
+                <MenuItem value={183}>{t('6 months')}</MenuItem>
+                <MenuItem value={365}>{t("1 year")}</MenuItem>
             </Select>
         </FormControl>
         <MaterialTable
             columns={[
-                {title: "Transaction ID", field: 'transactionId'},
-                {title: "Date", field: 'date'},
-                {title: "Debit, $", field: 'debitAmount'},
-                {title: "Credit, $", field: 'creditAmount'},
-                {title: "Sender ID", field: 'senderId'},
-                {title: "Receiver ID", field: 'receiverId'},
+                {title: t("Transaction ID"), field: 'transactionId'},
+                {title: t("Date"), field: 'date'},
+                {title: t("Debit, $"), field: 'debitAmount'},
+                {title: t("Credit, $"), field: 'creditAmount'},
+                {title: t("Sender ID"), field: 'senderId'},
+                {title: t("Receiver ID"), field: 'receiverId'},
             ]}
             data={data}
             title={'Transactions'}

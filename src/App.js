@@ -8,8 +8,11 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
 import Table from "./components/table/Table";
+import {useTranslation} from "react-i18next";
 
 const App = () => {
+
+    const { t, i18n } = useTranslation();
 
     let chart1Data = API.getData(0, 0).reduce(
         (data, current) => {
@@ -28,12 +31,12 @@ const App = () => {
     return <Box>
         <Header/>
         <Box m={2}>
-            <Typography variant={'h4'}>Charts</Typography>
+            <Typography variant={'h4'}>{t('Charts')}</Typography>
             <Grid container>
-                <Grid item xs={12} sm={6}><Typography>Debit per Sender</Typography><Chart data={chart1Data}/></Grid>
-                <Grid item xs={12} sm={6}><Typography>Credit per Sender</Typography><Chart data={chart2Data}/></Grid>
+                <Grid item xs={12} sm={6}><Typography>{t('Debit per Sender')}</Typography><Chart data={chart1Data}/></Grid>
+                <Grid item xs={12} sm={6}><Typography>{t('Credit per Sender')}</Typography><Chart data={chart2Data}/></Grid>
             </Grid>
-            <Typography variant={'h4'}>Data Grid</Typography>
+            <Typography variant={'h4'}>{t('Data Grid')}</Typography>
             <Table data={data}/>
         </Box>
     </Box>

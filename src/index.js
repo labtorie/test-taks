@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'fontsource-roboto';
 import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
+import './i18n'
 
 
 let theme = createMuiTheme({
