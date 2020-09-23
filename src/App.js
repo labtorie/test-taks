@@ -13,21 +13,23 @@ import {useTranslation} from "react-i18next";
 const App = () => {
 
     const { t, i18n } = useTranslation();
-
+    // Computing debit sum for every sender
     let chart1Data = API.getData(0, 0).reduce(
         (data, current) => {
             return {...data, [current.senderId]: current.debitAmount + (data[current.senderId] || 0)}
         }, {}
     )
+    // Same for credit
     let chart2Data = API.getData(0, 0).reduce(
         (data, current) => {
             return {...data, [current.senderId]: current.creditAmount + (data[current.senderId] || 0)}
         }, {}
     )
 
+    // raw data for grid
     let data = API.getData(0,0)
 
-    console.log(data)
+
     return <Box>
         <Header/>
         <Box m={2}>

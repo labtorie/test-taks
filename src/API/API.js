@@ -1,6 +1,7 @@
 import data from './data.json'
 
 const API = {
+    // pagination support
     getData: (page = 1, count = 10) => {
         return count === 0 ? data : data.slice((page-1)*count, page*count)
     }
