@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/test-task/static/css/main.0f781e61.chunk.css",
+    "main.js": "/test-task/static/js/main.6545f68d.chunk.js",
+    "main.js.map": "/test-task/static/js/main.6545f68d.chunk.js.map",
+    "runtime-main.js": "/test-task/static/js/runtime-main.4af6997d.js",
+    "runtime-main.js.map": "/test-task/static/js/runtime-main.4af6997d.js.map",
+    "static/css/2.3568a6cf.chunk.css": "/test-task/static/css/2.3568a6cf.chunk.css",
+    "static/js/2.2c233769.chunk.js": "/test-task/static/js/2.2c233769.chunk.js",
+    "static/js/2.2c233769.chunk.js.map": "/test-task/static/js/2.2c233769.chunk.js.map",
+    "index.html": "/test-task/index.html",
+    "precache-manifest.a82931004c3a95db7ee15059688f1ac7.js": "/test-task/precache-manifest.a82931004c3a95db7ee15059688f1ac7.js",
+    "service-worker.js": "/test-task/service-worker.js",
+    "static/css/2.3568a6cf.chunk.css.map": "/test-task/static/css/2.3568a6cf.chunk.css.map",
+    "static/css/main.0f781e61.chunk.css.map": "/test-task/static/css/main.0f781e61.chunk.css.map",
+    "static/js/2.2c233769.chunk.js.LICENSE.txt": "/test-task/static/js/2.2c233769.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/test-task/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4af6997d.js",
+    "static/css/2.3568a6cf.chunk.css",
+    "static/js/2.2c233769.chunk.js",
+    "static/css/main.0f781e61.chunk.css",
+    "static/js/main.6545f68d.chunk.js"
+  ]
+}
