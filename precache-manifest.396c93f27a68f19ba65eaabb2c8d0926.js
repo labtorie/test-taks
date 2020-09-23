@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d6f593c0231fcdd32b601b48dca9d40d",
+    "revision": "582111c0501003e0ef942cf713cc954b",
     "url": "/test-taks/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/test-taks/static/css/2.5a716f46.chunk.css"
   },
   {
-    "revision": "a5af1025f8cd3ff852fa",
+    "revision": "953170f08d97af3f7590",
     "url": "/test-taks/static/css/main.0f781e61.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/test-taks/static/js/2.2c233769.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a5af1025f8cd3ff852fa",
-    "url": "/test-taks/static/js/main.8170a7bc.chunk.js"
+    "revision": "953170f08d97af3f7590",
+    "url": "/test-taks/static/js/main.66279c72.chunk.js"
   },
   {
     "revision": "889b7df7928958884b16",
